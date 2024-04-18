@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fraunces">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body class="bg-cream font-montserrat text-sm">
+<main class="flex items-center justify-center min-h-[100vh]">
+  <div class="w-11/12 bg-white rounded-lg">
+    <img class="rounded-t-lg" src="./src/images/image-product-mobile.jpg" alt="hero image">
+    <div class="p-6 flex flex-col gap-4">
+    <span class="text-dark-grayish-blue uppercase tracking-[0.3rem] font-bold">
+      Perfume
+    </span>
+
+    <h1 class="text-3xl font-fraunces font-bold">Gabrielle Essence Eau De Parfum</h1>
+
+    <p class="text-dark-grayish-blue">
+      A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</p>
+
+    <div class="grid grid-flow-col grid-cols-2 font-fraunces font-bold items-center">
+      <span class="text-dark-cyan text-3xl">$149.99</span>
+      <span class="text-dark-grayish-blue">$169.99</span>
+    </div>
+
+    <button class="rounded-lg bg-dark-cyan text-white w-full place-self-center p-4">
+      <img class="inline-block mr-2" src="./src/images/icon-cart.svg" alt="icon of shopping cart">
+      <span class="font-bold hover:cursor-pointer">Add to Cart</span>
+    </button>
+  </div>
+  </div>
+</main> 
+<footer class="w-full text-xs text-center fixed bottom-[0]">
+  Challenge by <a class="text-dark-cyan" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a class="text-dark-cyan" href="https://www.frontendmentor.io/profile/theGamingKitten">theGamingKitten</a>.
+</footer>
+</body>
+</html>
