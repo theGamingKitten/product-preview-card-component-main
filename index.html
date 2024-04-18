@@ -11,9 +11,15 @@
 </head>
 <body class="bg-cream font-montserrat text-sm">
 <main class="flex items-center justify-center min-h-[100vh]">
-  <div class="w-11/12 bg-white rounded-lg">
-    <img class="rounded-t-lg" src="./src/images/image-product-mobile.jpg" alt="hero image">
-    <div class="p-6 flex flex-col gap-4">
+  <div class="w-11/12 bg-white rounded-lg flex flex-col md:flex-row md:w-4/5 lg:w-1/2">
+    <div class="md:w-1/2">
+      <picture>
+        <source srcset="./src/images/image-product-mobile.jpg" media="(max-width: 767px)">
+        <source srcset="./src/images/image-product-desktop.jpg">
+        <img class="h-full rounded-t-lg md:rounded-tr-none md:rounded-t-lg md:rounded-bl-lg" src="./src/images/image-product-mobile.jpg" alt="hero image">
+      </picture>
+    </div>
+    <div class="p-6 flex flex-col gap-4 md:w-1/2">
     <span class="text-dark-grayish-blue uppercase tracking-[0.3rem] font-bold">
       Perfume
     </span>

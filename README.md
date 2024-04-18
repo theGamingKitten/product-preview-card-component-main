@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source code](https://your-solution-url.com)
-- Live Site URL: [Preview](https://your-live-site-url.com)
+- [Source code](https://github.com/theGamingKitten/product-preview-card-component-main)
+- [Live Site](https://thegamingkitten.github.io/product-preview-card-component-main/)
 
 ## My process
 
@@ -48,6 +48,15 @@ Users should be able to:
 ### What I learned
 
 - Getting a lot more confident with using Tailwind. Only had to look up one very specific class (letter spacing => tracking) for the mobile view.
+
+- How to use a different picture based on the screen size:
+```html
+<picture>
+  <source srcset="./src/images/image-product-mobile.jpg">
+  <source srcset="./src/images/image-product-desktop.jpg" media="(min-width: 768px)">
+  <img class="max-w-full h-full rounded-t-lg md:rounded-tr-none md:rounded-t-lg md:rounded-bl-lg" src="./src/images/image-product-mobile.jpg" alt="hero image">
+</picture>
+```
 
 ### Continued development
 
